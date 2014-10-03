@@ -86,7 +86,7 @@ function changeContinent(continent)
 
 
     xml = loadXMLDoc("mondial.xml");
-
+    populateStats(xml);
     var table = document.getElementById("countries");
     var dropDown = document.getElementById("dropList");
 
@@ -144,11 +144,7 @@ function changeContinent(continent)
         }
         
         
-
-
-
-
-
+        
         name.appendChild(document.createTextNode(nameHld.iterateNext().childNodes[0].nodeValue));
         provinces.appendChild(document.createTextNode(findProvinces(tag, provinceHld, provinceNHld)));
         capitol.appendChild(document.createTextNode(ccHld.iterateNext().childNodes[0].nodeValue));
@@ -217,4 +213,113 @@ function headers(table)
     header.appendChild(document.createTextNode("Population"));
     row.appendChild(header);
     table.appendChild(row);
+}
+
+function populateStats(xml)
+{
+    var tblHld = document.getElementById('stats');
+
+    tblHld.innerHTML = '';
+
+    path = '/mondial/continent';
+    var continentHld = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+    path = '//country';
+    var countryHld = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+    path = '//city';
+    var cityHld = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+    path = '/mondial/country/population'
+    var popHld = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+
+    var contCount = 0;
+    var couCount = 0;
+    var cityCount = 0;
+    var populationCount = 0;
+
+    var runC = true;
+    var runCo = true;
+    var runCi = true;
+    var runPop = true;
+
+    while (runC)
+    {
+        try
+        {
+            continentHld.iterateNext().childNodes[0];
+        }
+        catch (err)
+        {
+            runC = false;
+            break;
+        }
+        contCount++;
+    }
+
+    while (runCo) {
+        try {
+            countryHld.iterateNext().childNodes[0];
+        }
+        catch (err) {
+            runCo = false;
+            break;
+        }
+        couCount++;
+    }
+    while (runCi) {
+        try {
+            cityHld.iterateNext().childNodes[0];
+        }
+        catch (err) {
+            runCi = false;
+            break;
+        }
+        cityCount++;
+    }
+    while (runPop) {
+        try {
+            var popFix = parseInt(popHld.iterateNext().childNodes[0].nodeValue);
+        }
+        catch (err) {
+            runPop = false;
+            break;
+        }
+        populationCount += popFix;
+    }
+
+    var row = document.createElement('tr');
+    var cell = document.createElement('td');
+    cell.appendChild(document.createTextNode("Continents:"));
+    row.appendChild(cell);
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode(contCount));
+    row.appendChild(cell);
+    tblHld.appendChild(row);
+
+    row = document.createElement('tr');
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode("Countries:"));
+    row.appendChild(cell);
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode(couCount));
+    row.appendChild(cell);
+    tblHld.appendChild(row);
+
+    row = document.createElement('tr');
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode("Cities:"));
+    row.appendChild(cell);
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode(cityCount));
+    row.appendChild(cell);
+    tblHld.appendChild(row);
+
+    row = document.createElement('tr');
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode("Population:"));
+    row.appendChild(cell);
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode(populationCount));
+    row.appendChild(cell);
+    tblHld.appendChild(row);
+
+
 }

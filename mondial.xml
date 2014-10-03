@@ -16048,12 +16048,15 @@
       <languages percentage="17">Hebrew</languages>
       <border country="IL" length="307"/>
       <border country="JOR" length="97"/>
-      <city id="cty-Westbank-Nablus" is_country_cap="yes" country="WEST">
+      <city id="cty-Westbank-Nablus" country="WEST">
          <name>Nablus</name>
          <longitude>35.3</longitude>
          <latitude>32.2</latitude>
          <population year="04">104000</population>
       </city>
+     <city id ="cty-Westbank-NoCap" is_country_cap ="yes">
+       <name>No Capital</name>
+     </city>
    </country>
    <country car_code="J" area="377835" capital="cty-Japan-Tokyo"
             memberships="org-AfDB org-AG org-APEC org-AsDB org-BIS org-CP org-CCC org-ESCAP org-EBRD org-FAO org-G-2 org-G-5 org-G-7 org-G-8 org-G-10 org-IADB org-IAEA org-IBRD org-ICC org-ICAO org-ICFTU org-Interpol org-IDA org-IEA org-IFRCS org-IFC org-IFAD org-ILO org-IMO org-Inmarsat org-IMF org-IOC org-IOM org-ISO org-ICRM org-ITU org-Intelsat org-MTCR org-EN org-NSG org-OECD org-OAS org-PCA org-UN org-UNESCO org-UNIDO org-UNITAR org-UNHCR org-UNRWA org-UNU org-UPU org-WFTU org-WHO org-WIPO org-WMO org-WToO org-WTrO org-ZC">
