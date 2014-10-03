@@ -12332,7 +12332,7 @@
          <population year="1991">32665975</population>
          <population year="2001">39044716</population>
          <population year="2011">46729000</population>
-         <city id="cty-BD-3" province="prov-BD-3" is_state_cap="yes" country="BD">
+         <city id="cty-BD-3" province="prov-BD-3" is_country_cap='yes' is_state_cap="yes" country="BD">
             <name>Dhaka</name>
             <longitude>90.5</longitude>
             <latitude>24</latitude>
@@ -14346,7 +14346,7 @@
       <languages percentage="0.6">Hebrew</languages>
       <border country="IL" length="51"/>
       <border country="ET" length="11"/>
-      <city id="cty-GAZA-Gaza" country="GAZA">
+      <city id="cty-GAZA-Gaza" is_country_cap="yes" country="GAZA">
          <name>Gaza</name>
          <longitude>34.5</longitude>
          <latitude>31.5</latitude>
@@ -14947,7 +14947,7 @@
          <area>664</area>
          <population year="2000">8361079</population>
          <population year="2010">9588198</population>
-         <city id="cty-RI-11" province="prov-RI-11" is_state_cap="yes" country="RI">
+         <city id="cty-RI-11" province="prov-RI-11" is_country_cap="yes" is_state_cap="yes" country="RI">
             <name>Jakarta</name>
             <longitude>106.5</longitude>
             <latitude>-6.1</latitude>
@@ -15722,7 +15722,7 @@
          <area>404240</area>
          <population year="1992">3834986</population>
          <population year="2010">6777146</population>
-         <city id="cty-SA-6" province="prov-SA-6" is_state_cap="yes" country="SA">
+         <city id="cty-SA-6" province="prov-SA-6" is_country_cap="yes" is_state_cap="yes" country="SA">
             <name>Al-Riyadh</name>
             <longitude>46.7</longitude>
             <latitude>24.65</latitude>
@@ -16048,7 +16048,7 @@
       <languages percentage="17">Hebrew</languages>
       <border country="IL" length="307"/>
       <border country="JOR" length="97"/>
-      <city id="cty-Westbank-Nablus" country="WEST">
+      <city id="cty-Westbank-Nablus" is_country_cap="yes" country="WEST">
          <name>Nablus</name>
          <longitude>35.3</longitude>
          <latitude>32.2</latitude>
@@ -17037,7 +17037,7 @@
          <area>633</area>
          <population year="2000">9454040</population>
          <population year="2007">11553427</population>
-         <city id="cty-RP-13" province="prov-RP-13" is_state_cap="yes" country="RP">
+         <city id="cty-RP-13" province="prov-RP-13" is_country_cap='yes' is_state_cap="yes" country="RP">
             <name>Manila</name>
             <longitude>120.983</longitude>
             <latitude>14.5833</latitude>
@@ -23672,7 +23672,7 @@
          <area>133985</area>
          <population year="2001">2350466</population>
          <population year="2010">2839946</population>
-         <city id="cty-BOL-1" province="prov-BOL-1" is_state_cap="yes" country="BOL">
+         <city id="cty-BOL-1" province="prov-BOL-1" is_country_cap='yes' is_state_cap="yes" country="BOL">
             <name>La Paz</name>
             <longitude>-68.15</longitude>
             <latitude>-16.5</latitude>
@@ -25009,7 +25009,7 @@
          <name>Santiago</name>
          <area>15403</area>
          <population>5257937</population>
-         <city id="cty-Chile-13" province="prov-Chile-13" is_state_cap="yes"
+         <city id="cty-Chile-13" province="prov-Chile-13" is_country_cap='yes' is_state_cap="yes"
                country="RCH">
             <name>Santiago</name>
             <longitude>-70.7</longitude>
@@ -26384,7 +26384,7 @@
          <area>9580</area>
          <population year="1994">1985602</population>
          <population year="2004">2366494</population>
-         <city id="cty-MA-10" province="prov-MA-10" is_state_cap="yes" country="MA">
+         <city id="cty-MA-10" province="prov-MA-10" is_country_cap='yes' is_state_cap="yes" country="MA">
             <name>Rabat</name>
             <longitude>-6.5</longitude>
             <latitude>33.6</latitude>
@@ -27420,7 +27420,7 @@
          <area>7607</area>
          <population year="1991">371674</population>
          <population year="2006">1406239</population>
-         <city id="cty-WAN-2" province="prov-WAN-2" is_state_cap="yes" country="WAN">
+         <city id="cty-WAN-2" province="prov-WAN-2" is_country_cap='yes' is_state_cap="yes" country="WAN">
             <name>Abuja</name>
             <longitude>7.5</longitude>
             <latitude>9.05</latitude>
@@ -29211,7 +29211,7 @@
       <border country="EAK" length="232"/>
       <border country="EAU" length="435"/>
       <border country="SUD" length="2184"/>
-      <city id="cty-SouthSudan-Juba" is_state_cap="yes" country="SSD">
+      <city id="cty-SouthSudan-Juba" is_country_cap='yes' is_state_cap="yes" country="SSD">
          <name>Juba</name>
          <longitude>31.6</longitude>
          <latitude>4.85</latitude>
